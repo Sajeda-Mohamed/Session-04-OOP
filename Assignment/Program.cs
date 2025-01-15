@@ -36,7 +36,15 @@ namespace Assignment
             //authentication.AuthorizeUser();
             #endregion
 
+            #region Q3 INotificationService
+            //INotificationService Email = new EmailNotificationService();
+            //INotificationService SMS = new SmsNotificationService();
+            //INotificationService Push = new PushNotificationService();
 
+            //Email.SendNotification("Sajeda123@gmail.com", "You may have an Email");
+            //SMS.SendNotification("Sajeda", "You have a SMS Message");
+            //Push.SendNotification("SAjeda", "You have a Push Notification");
+            #endregion
             #endregion
         }
     }

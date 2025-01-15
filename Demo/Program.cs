@@ -51,6 +51,17 @@ namespace Demo
             SeriesByThree seriesByThree = new SeriesByThree();
             Print10NumbersFromSeries(seriesByThree);
             #endregion
+
+            #region Implicit and Explicit Implementation
+            //AirPlane airPlane = new AirPlane();
+            //airPlane.Forward
+
+            IFlyable AirPlane1 = new AirPlane();
+            AirPlane1.Forward();
+
+            IMovable AirPlane2 = new AirPlane();
+            AirPlane2.Forward();
+            #endregion
         }
     }
 }

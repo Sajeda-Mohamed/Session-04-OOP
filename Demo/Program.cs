@@ -52,7 +52,7 @@ namespace Demo
             Print10NumbersFromSeries(seriesByThree);
             #endregion
 
-            #region Implicit and Explicit Implementation
+            #region Implicit & Explicit Implementation
             //AirPlane airPlane = new AirPlane();
             //airPlane.Forward
 

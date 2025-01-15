@@ -29,6 +29,13 @@ namespace Assignment
             //Rectangle.DisplayShapeInfo(); 
             #endregion
 
+            #region Q2 IAuthenticationService
+            //IAuthenticationService authentication = new BasicAuthenticationService("Sajeda", "123456", "Authorized");
+
+            //authentication.AuthenticateUser();
+            //authentication.AuthorizeUser();
+            #endregion
+
 
             #endregion
         }

@@ -4,7 +4,30 @@ namespace Demo
 {
     internal class Program
     {
-        
+        //public static void Print10NumbersFromSeries(SeriesByTwo series)
+        //{
+        //    if (series is not null)
+        //    {
+        //        for (int i = 0; i < 10; i++)
+        //        {
+        //            Console.WriteLine(series.Current);
+        //        }
+        //        series.GetNext();
+        //        series.Reset();
+        //    }
+        //}
+        public static void Print10NumbersFromSeries(ISeries series)
+        {
+            if (series is not null)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine(series.Current);
+                }
+                series.GetNext();
+                series.Reset();
+            }
+        }
         static void Main(string[] args)
         {
             #region Interface
@@ -21,6 +44,13 @@ namespace Demo
             //myType1.Print();
             #endregion
 
+            #region Interface Ex01
+            //SeriesByTwo seriesByTwo = new SeriesByTwo();
+            //Print10NumbersFromSeries(seriesByTwo);
+
+            SeriesByThree seriesByThree = new SeriesByThree();
+            Print10NumbersFromSeries(seriesByThree);
+            #endregion
         }
     }
 }
